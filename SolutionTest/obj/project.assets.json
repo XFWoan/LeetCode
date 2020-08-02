@@ -3525,11 +3525,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Workspace\\LeetCode\\SolutionTest\\SolutionTest.csproj",
+      "projectUniqueName": "D:\\Workspace\\LeetCode\\SolutionTest\\SolutionTest.csproj",
       "projectName": "SolutionTest",
-      "projectPath": "d:\\Workspace\\LeetCode\\SolutionTest\\SolutionTest.csproj",
+      "projectPath": "D:\\Workspace\\LeetCode\\SolutionTest\\SolutionTest.csproj",
       "packagesPath": "C:\\Users\\XFWoa\\.nuget\\packages\\",
-      "outputPath": "d:\\Workspace\\LeetCode\\SolutionTest\\obj\\",
+      "outputPath": "D:\\Workspace\\LeetCode\\SolutionTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\XFWoa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3545,8 +3545,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "d:\\Workspace\\LeetCode\\Solution\\Solution.csproj": {
-              "projectPath": "d:\\Workspace\\LeetCode\\Solution\\Solution.csproj"
+            "D:\\Workspace\\LeetCode\\Solution\\Solution.csproj": {
+              "projectPath": "D:\\Workspace\\LeetCode\\Solution\\Solution.csproj"
             }
           }
         }

@@ -43,5 +43,7 @@ namespace SolutionTest {
             Solution.NextPermutation (test9);
             Assert.Equal (test9, new int[] { 1, 1, 5 });
         }
+
+
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Workspace\\LeetCode\\Solution\\Solution.csproj": {}
+    "D:\\Workspace\\LeetCode\\Solution\\Solution.csproj": {}
   },
   "projects": {
-    "d:\\Workspace\\LeetCode\\Solution\\Solution.csproj": {
+    "D:\\Workspace\\LeetCode\\Solution\\Solution.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Workspace\\LeetCode\\Solution\\Solution.csproj",
+        "projectUniqueName": "D:\\Workspace\\LeetCode\\Solution\\Solution.csproj",
         "projectName": "Solution",
-        "projectPath": "d:\\Workspace\\LeetCode\\Solution\\Solution.csproj",
+        "projectPath": "D:\\Workspace\\LeetCode\\Solution\\Solution.csproj",
         "packagesPath": "C:\\Users\\XFWoa\\.nuget\\packages\\",
-        "outputPath": "d:\\Workspace\\LeetCode\\Solution\\obj\\",
+        "outputPath": "D:\\Workspace\\LeetCode\\Solution\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\XFWoa\\AppData\\Roaming\\NuGet\\NuGet.Config",

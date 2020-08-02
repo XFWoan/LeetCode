@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Workspace\\LeetCode\\SolutionTest\\SolutionTest.csproj": {}
+    "D:\\Workspace\\LeetCode\\SolutionTest\\SolutionTest.csproj": {}
   },
   "projects": {
-    "d:\\Workspace\\LeetCode\\SolutionTest\\SolutionTest.csproj": {
+    "D:\\Workspace\\LeetCode\\SolutionTest\\SolutionTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Workspace\\LeetCode\\SolutionTest\\SolutionTest.csproj",
+        "projectUniqueName": "D:\\Workspace\\LeetCode\\SolutionTest\\SolutionTest.csproj",
         "projectName": "SolutionTest",
-        "projectPath": "d:\\Workspace\\LeetCode\\SolutionTest\\SolutionTest.csproj",
+        "projectPath": "D:\\Workspace\\LeetCode\\SolutionTest\\SolutionTest.csproj",
         "packagesPath": "C:\\Users\\XFWoa\\.nuget\\packages\\",
-        "outputPath": "d:\\Workspace\\LeetCode\\SolutionTest\\obj\\",
+        "outputPath": "D:\\Workspace\\LeetCode\\SolutionTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\XFWoa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "d:\\Workspace\\LeetCode\\Solution\\Solution.csproj": {
-                "projectPath": "d:\\Workspace\\LeetCode\\Solution\\Solution.csproj"
+              "D:\\Workspace\\LeetCode\\Solution\\Solution.csproj": {
+                "projectPath": "D:\\Workspace\\LeetCode\\Solution\\Solution.csproj"
               }
             }
           }
@@ -78,14 +78,14 @@
         }
       }
     },
-    "d:\\Workspace\\LeetCode\\Solution\\Solution.csproj": {
+    "D:\\Workspace\\LeetCode\\Solution\\Solution.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Workspace\\LeetCode\\Solution\\Solution.csproj",
+        "projectUniqueName": "D:\\Workspace\\LeetCode\\Solution\\Solution.csproj",
         "projectName": "Solution",
-        "projectPath": "d:\\Workspace\\LeetCode\\Solution\\Solution.csproj",
+        "projectPath": "D:\\Workspace\\LeetCode\\Solution\\Solution.csproj",
         "packagesPath": "C:\\Users\\XFWoa\\.nuget\\packages\\",
-        "outputPath": "d:\\Workspace\\LeetCode\\Solution\\obj\\",
+        "outputPath": "D:\\Workspace\\LeetCode\\Solution\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\XFWoa\\AppData\\Roaming\\NuGet\\NuGet.Config",

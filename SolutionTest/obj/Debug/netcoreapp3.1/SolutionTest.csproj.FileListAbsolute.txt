@@ -91,8 +91,9 @@ d:\Workspace\LeetCode\SolutionTest\bin\Debug\netcoreapp3.1\Solution.pdb
 d:\Workspace\LeetCode\SolutionTest\obj\Debug\netcoreapp3.1\SolutionTest.csprojAssemblyReference.cache
 d:\Workspace\LeetCode\SolutionTest\obj\Debug\netcoreapp3.1\SolutionTest.AssemblyInfoInputs.cache
 d:\Workspace\LeetCode\SolutionTest\obj\Debug\netcoreapp3.1\SolutionTest.AssemblyInfo.cs
-d:\Workspace\LeetCode\SolutionTest\obj\Debug\netcoreapp3.1\SolutionTest.csproj.CoreCompileInputs.cache
 d:\Workspace\LeetCode\SolutionTest\obj\Debug\netcoreapp3.1\SolutionTest.csproj.CopyComplete
 d:\Workspace\LeetCode\SolutionTest\obj\Debug\netcoreapp3.1\SolutionTest.dll
 d:\Workspace\LeetCode\SolutionTest\obj\Debug\netcoreapp3.1\SolutionTest.pdb
 d:\Workspace\LeetCode\SolutionTest\obj\Debug\netcoreapp3.1\SolutionTest.genruntimeconfig.cache
+D:\Workspace\LeetCode\SolutionTest\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Workspace\LeetCode\SolutionTest\obj\Debug\netcoreapp3.1\SolutionTest.csproj.CoreCompileInputs.cache

@@ -1,0 +1,9 @@
+d:\Workspace\LeetCode\Solution\bin\Debug\netstandard2.0\Solution.deps.json
+d:\Workspace\LeetCode\Solution\bin\Debug\netstandard2.0\Solution.dll
+d:\Workspace\LeetCode\Solution\bin\Debug\netstandard2.0\Solution.pdb
+d:\Workspace\LeetCode\Solution\obj\Debug\netstandard2.0\Solution.csprojAssemblyReference.cache
+d:\Workspace\LeetCode\Solution\obj\Debug\netstandard2.0\Solution.AssemblyInfoInputs.cache
+d:\Workspace\LeetCode\Solution\obj\Debug\netstandard2.0\Solution.AssemblyInfo.cs
+d:\Workspace\LeetCode\Solution\obj\Debug\netstandard2.0\Solution.csproj.CoreCompileInputs.cache
+d:\Workspace\LeetCode\Solution\obj\Debug\netstandard2.0\Solution.dll
+d:\Workspace\LeetCode\Solution\obj\Debug\netstandard2.0\Solution.pdb

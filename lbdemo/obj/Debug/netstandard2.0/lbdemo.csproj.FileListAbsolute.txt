@@ -1,0 +1,9 @@
+d:\Workspace\LeetCode\lbdemo\bin\Debug\netstandard2.0\lbdemo.deps.json
+d:\Workspace\LeetCode\lbdemo\bin\Debug\netstandard2.0\lbdemo.dll
+d:\Workspace\LeetCode\lbdemo\bin\Debug\netstandard2.0\lbdemo.pdb
+d:\Workspace\LeetCode\lbdemo\obj\Debug\netstandard2.0\lbdemo.csprojAssemblyReference.cache
+d:\Workspace\LeetCode\lbdemo\obj\Debug\netstandard2.0\lbdemo.AssemblyInfoInputs.cache
+d:\Workspace\LeetCode\lbdemo\obj\Debug\netstandard2.0\lbdemo.AssemblyInfo.cs
+d:\Workspace\LeetCode\lbdemo\obj\Debug\netstandard2.0\lbdemo.csproj.CoreCompileInputs.cache
+d:\Workspace\LeetCode\lbdemo\obj\Debug\netstandard2.0\lbdemo.dll
+d:\Workspace\LeetCode\lbdemo\obj\Debug\netstandard2.0\lbdemo.pdb

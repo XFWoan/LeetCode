@@ -1,0 +1,16 @@
+d:\Workspace\LeetCode\SolutionDebug\obj\Debug\netcoreapp3.1\SolutionDebug.csprojAssemblyReference.cache
+d:\Workspace\LeetCode\SolutionDebug\obj\Debug\netcoreapp3.1\SolutionDebug.AssemblyInfoInputs.cache
+d:\Workspace\LeetCode\SolutionDebug\obj\Debug\netcoreapp3.1\SolutionDebug.AssemblyInfo.cs
+d:\Workspace\LeetCode\SolutionDebug\obj\Debug\netcoreapp3.1\SolutionDebug.csproj.CoreCompileInputs.cache
+d:\Workspace\LeetCode\SolutionDebug\bin\Debug\netcoreapp3.1\SolutionDebug.exe
+d:\Workspace\LeetCode\SolutionDebug\bin\Debug\netcoreapp3.1\SolutionDebug.deps.json
+d:\Workspace\LeetCode\SolutionDebug\bin\Debug\netcoreapp3.1\SolutionDebug.runtimeconfig.json
+d:\Workspace\LeetCode\SolutionDebug\bin\Debug\netcoreapp3.1\SolutionDebug.runtimeconfig.dev.json
+d:\Workspace\LeetCode\SolutionDebug\bin\Debug\netcoreapp3.1\SolutionDebug.dll
+d:\Workspace\LeetCode\SolutionDebug\bin\Debug\netcoreapp3.1\SolutionDebug.pdb
+d:\Workspace\LeetCode\SolutionDebug\bin\Debug\netcoreapp3.1\Solution.dll
+d:\Workspace\LeetCode\SolutionDebug\bin\Debug\netcoreapp3.1\Solution.pdb
+d:\Workspace\LeetCode\SolutionDebug\obj\Debug\netcoreapp3.1\SolutionDebug.csproj.CopyComplete
+d:\Workspace\LeetCode\SolutionDebug\obj\Debug\netcoreapp3.1\SolutionDebug.dll
+d:\Workspace\LeetCode\SolutionDebug\obj\Debug\netcoreapp3.1\SolutionDebug.pdb
+d:\Workspace\LeetCode\SolutionDebug\obj\Debug\netcoreapp3.1\SolutionDebug.genruntimeconfig.cache

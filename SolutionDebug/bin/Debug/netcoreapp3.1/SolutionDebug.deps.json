@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "SolutionDebug/1.0.0": {
+        "dependencies": {
+          "Solution": "1.0.0"
+        },
+        "runtime": {
+          "SolutionDebug.dll": {}
+        }
+      },
+      "Solution/1.0.0": {
+        "runtime": {
+          "Solution.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SolutionDebug/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Solution/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

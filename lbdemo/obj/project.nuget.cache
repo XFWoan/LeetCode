@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m8wJ7uQyoVTeHN+DwMSevNQhmXkcOD7zdGB2R2IorqqHXHcDeh+Ad9M7DXj2EqFbePBCGXyVLsnoEltz19HpcA==",
+  "dgSpecHash": "ZG2rALfhB0hHAWm2Qd74EaxKUvC7DGwNvudeQTC336qBMeQMyUBHZ+CJVIwOKAkz5h9tBVJ135I+KR4xohRuKg==",
   "success": true,
-  "projectFilePath": "d:\\Workspace\\LeetCode\\Solution\\Solution.csproj",
+  "projectFilePath": "d:\\Workspace\\LeetCode\\lbdemo\\lbdemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\XFWoa\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\XFWoa\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

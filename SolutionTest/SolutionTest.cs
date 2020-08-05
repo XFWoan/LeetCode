@@ -47,7 +47,7 @@ namespace SolutionTest
             Assert.Equal(test9, new int[] { 1, 1, 5 });
         }
 
-        //31
+        //32
         [Fact]
         public void LongestValidParenthesesTest()
         {
@@ -59,6 +59,15 @@ namespace SolutionTest
             {
                 Assert.True(Solution.LongestValidParentheses(item.Key) == item.Value);
             }
+        }
+
+        //33
+        [Fact]
+        public void SearchTest()
+        {
+            Assert.Equal(4, Solution.Search(new int[] { 4, 5, 6, 7, 0, 1, 2 }, 0));
+            Assert.Equal(-1, Solution.Search(new int[] { 4, 5, 6, 7, 0, 1, 2 }, 3));
+            Assert.Equal(1, Solution.Search(new int[] { 3, 1 }, 1));
         }
     }
 }

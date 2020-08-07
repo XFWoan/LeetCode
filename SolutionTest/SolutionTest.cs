@@ -69,5 +69,14 @@ namespace SolutionTest
             Assert.Equal(-1, Solution.Search(new int[] { 4, 5, 6, 7, 0, 1, 2 }, 3));
             Assert.Equal(1, Solution.Search(new int[] { 3, 1 }, 1));
         }
+
+        //34
+        [Fact]
+        public void SearchRange()
+        {
+            Assert.Equal(new int[] { 3, 4 }, Solution.SearchRange(new int[] { 5, 7, 7, 8, 8, 10 }, 8));
+            Assert.Equal(new int[] { -1, -1 }, Solution.SearchRange(new int[] { 5, 7, 7, 8, 8, 10 }, 6));
+            Assert.Equal(new int[] { -1, -1 }, Solution.SearchRange(new int[] { }, 6));
+        }
     }
 }

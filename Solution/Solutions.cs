@@ -30,7 +30,7 @@ namespace Solutions
             {
                 j++;
                 if (j >= nums.Length)
-                {     
+                {
                     break;
                 }
             }
@@ -102,13 +102,13 @@ namespace Solutions
             if (nums.Length == 0) return -1;
             if (nums.Length == 1) return nums[0] == target ? 0 : -1;
             int l = 0, r = nums.Length - 1;
-            while (l <=r)
+            while (l <= r)
             {
                 int mid = (l + r) / 2;
                 if (nums[mid] == target) return mid;
                 if (nums[0] <= nums[mid])
                 {
-                    if(nums[0]<=target && target<nums[mid])
+                    if (nums[0] <= target && target < nums[mid])
                     {
                         r = mid - 1;
                     }
@@ -119,7 +119,7 @@ namespace Solutions
                 }
                 else
                 {
-                    if(nums[mid]<target && target <= nums[nums.Length - 1])
+                    if (nums[mid] < target && target <= nums[nums.Length - 1])
                     {
                         l = mid + 1;
                     }
@@ -130,6 +130,52 @@ namespace Solutions
                 }
             }
             return -1;
+        }
+
+        //34. 在排序数组中查找元素的第一个和最后一个位置
+        static public int[] SearchRange(int[] nums, int target)
+        {
+            int[] res = new int[2] { -1, -1 };
+            if (nums.Length == 0) return res;
+            for (int flag = 0; flag < 2; flag++)
+            {
+                int l = 0, r = nums.Length - 1;
+                while (l < r)
+                {
+                    int mid = (l + r + flag) / 2;
+                    if (flag == 0)
+                    {
+                        if (target <= nums[mid] && target >= nums[l])
+                        {
+                            r = mid;
+                        }
+                        else
+                        {
+                            l = mid + 1;
+                        }
+                    }
+                    if (flag == 1)
+                    {
+                        if (target >= nums[mid] && target <= nums[r])
+                        {
+                            l = mid;
+                        }
+                        else
+                        {
+                            r = mid - 1;
+                        }
+                    }
+                }
+                if (target == nums[l])
+                {
+                    res[flag] = l;
+                }
+                else
+                {
+                    res[flag] = -1;
+                }
+            }
+            return res;
         }
     }
 }

@@ -177,5 +177,37 @@ namespace Solutions
             }
             return res;
         }
+
+        //35. 搜索插入位置
+        static public int SearchInsert(int[] nums, int target)
+        {
+            if (nums.Length == 0) return 0;
+            if (nums.Length == 1)
+            {
+                return target > nums[0] ? 1 : 0;
+            }
+            int l = 0, r = nums.Length - 1;
+            while(l < r)
+            {
+                int mid = (l + r) / 2;
+                if (target<nums[l])
+                {
+                    return l;
+                }
+                if (target > nums[r])
+                {
+                    return r+1;
+                }
+                if (target >= nums[l] && target <= nums[mid])
+                {
+                    r = mid;
+                }
+                if (target > nums[mid] && target <= nums[r])
+                {
+                    l = mid + 1;
+                }
+            }
+            return l;
+        }
     }
 }

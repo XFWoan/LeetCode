@@ -78,5 +78,17 @@ namespace SolutionTest
             Assert.Equal(new int[] { -1, -1 }, Solution.SearchRange(new int[] { 5, 7, 7, 8, 8, 10 }, 6));
             Assert.Equal(new int[] { -1, -1 }, Solution.SearchRange(new int[] { }, 6));
         }
+
+        //35
+        [Fact]
+        public void SearchInsertTest()
+        {
+            Assert.Equal(2, Solution.SearchInsert(new int[] { 1, 3, 5, 6 }, 5));
+            Assert.Equal(1, Solution.SearchInsert(new int[] { 1, 3, 5, 6 }, 2));
+            Assert.Equal(4, Solution.SearchInsert(new int[] { 1, 3, 5, 6 }, 7));
+            Assert.Equal(0, Solution.SearchInsert(new int[] { 1, 3, 5, 6 }, 0));
+            Assert.Equal(1, Solution.SearchInsert(new int[] { 1 }, 2));
+            Assert.Equal(0, Solution.SearchInsert(new int[] { 1 }, 0));
+        }
     }
 }

@@ -1,5 +1,6 @@
 using Solutions;
 using System.Collections.Generic;
+using System.Linq;
 using Xunit;
 
 namespace SolutionTest
@@ -89,6 +90,37 @@ namespace SolutionTest
             Assert.Equal(0, Solution.SearchInsert(new int[] { 1, 3, 5, 6 }, 0));
             Assert.Equal(1, Solution.SearchInsert(new int[] { 1 }, 2));
             Assert.Equal(0, Solution.SearchInsert(new int[] { 1 }, 0));
+        }
+
+        //36
+        [Fact]
+        public void IsValidSudokuTest()
+        {
+            string[][] _board =
+            {
+                new string[]{ "5","3",".",".","7",".",".",".","." },
+                new string[]{ "6",".",".","1","9","5",".",".","." },
+                new string[]{ ".","9","8",".",".",".",".","6","." },
+                new string[]{ "8",".",".",".","6",".",".",".","3" },
+                new string[]{ "4",".",".","8",".","3",".",".","1" },
+                new string[]{ "7",".",".",".","2",".",".",".","6"},
+                new string[]{".","6",".",".",".",".","2","8","." },
+                new string[]{ ".",".",".","4","1","9",".",".","5" },
+                new string[]{ ".",".",".",".","8",".",".","7","9" },
+            };
+            char[][] board = new char[9][];
+
+            for (int i = 0; i < 9; i++)
+            {
+                board[i] = new char[9];
+                for (int j = 0; j < 9; j++)
+                {
+                    board[i][j] = _board[i][j][0];
+                }
+            }
+            Assert.True(Solution.IsValidSudoku(board));
+            board[0][0] = '8';
+            Assert.False(Solution.IsValidSudoku(board));
         }
     }
 }

@@ -187,16 +187,16 @@ namespace Solutions
                 return target > nums[0] ? 1 : 0;
             }
             int l = 0, r = nums.Length - 1;
-            while(l < r)
+            while (l < r)
             {
                 int mid = (l + r) / 2;
-                if (target<nums[l])
+                if (target < nums[l])
                 {
                     return l;
                 }
                 if (target > nums[r])
                 {
-                    return r+1;
+                    return r + 1;
                 }
                 if (target >= nums[l] && target <= nums[mid])
                 {
@@ -208,6 +208,44 @@ namespace Solutions
                 }
             }
             return l;
+        }
+
+        //36. 有效的数独
+        static public bool IsValidSudoku(char[][] board)
+        {
+            HashSet<int> row = new HashSet<int>();
+            HashSet<int>[] columns = new HashSet<int>[9];
+            HashSet<int>[] boxes = new HashSet<int>[9];
+            for (int i = 0; i < 9; i++)
+            {
+                columns[i] = new HashSet<int>();
+                boxes[i] = new HashSet<int>();
+            }
+            for (int i = 0; i < 9; i++)
+            {
+                row = new HashSet<int>();
+                for (int j = 0; j < 9; j++)
+                {
+                    int t = board[i][j] - '0';
+                    if (t == '.' - '0') continue;
+                    if (row.Contains(t))
+                        return false;
+                    else
+                        row.Add(t);
+                    if (columns[j].Contains(t))
+                        return false;
+                    else
+                        columns[j].Add(t);
+                    int r = i / 3;
+                    int c = j / 3;
+                    int n = r * 3 + c;
+                    if (boxes[n].Contains(t))
+                        return false;
+                    else
+                        boxes[n].Add(t);
+                }
+            }
+            return true;
         }
     }
 }

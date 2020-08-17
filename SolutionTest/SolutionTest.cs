@@ -1,4 +1,5 @@
 using Solutions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Xunit;
@@ -123,6 +124,14 @@ namespace SolutionTest
             Assert.False(Solution.IsValidSudoku(board));
         }
 
-
+        //38
+        [Fact]
+        public void CountAndSayTest()
+        {
+            for (int i = 1; i <= 30; i++)
+            {
+                //TODO
+            }
+        }
     }
 }

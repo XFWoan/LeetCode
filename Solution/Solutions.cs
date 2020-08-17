@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace Solutions
 {
@@ -289,6 +290,28 @@ namespace Solutions
             }
         }
 
-
+        //38.外观数列
+        static public string CountAndSay(int n)
+        {
+            if (n == 1) return "1";
+            string s = CountAndSay(n - 1);
+            StringBuilder sb = new StringBuilder();
+            int counter = 0;
+            char pointer = s[0];
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] == pointer) counter++;
+                else
+                {
+                    sb.Append(counter);
+                    sb.Append(pointer);
+                    counter = 1;
+                    pointer = s[i];
+                }
+            }
+            sb.Append(counter);
+            sb.Append(pointer);
+            return sb.ToString();
+        }
     }
 }

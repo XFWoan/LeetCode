@@ -122,5 +122,7 @@ namespace SolutionTest
             board[0][0] = '8';
             Assert.False(Solution.IsValidSudoku(board));
         }
+
+
     }
 }

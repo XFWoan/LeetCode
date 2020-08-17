@@ -247,5 +247,48 @@ namespace Solutions
             }
             return true;
         }
+
+        //37.解数独
+        static public void SolveSudoku(char[][] board)
+        {
+            if (board == null || board.Length != 9 || board[0] == null || board[0].Length != 9) return;
+            backTrace(board, 0, 0);
+
+            bool backTrace(char[][] _board, int row, int col)
+            {
+                const int N = 9;
+                //当前行试探结束，切换下一行
+                if (col == N)
+                    return backTrace(_board, row + 1, 0);
+                //最后一行试探结束，解数独完成
+                if (row == N)
+                    return true;
+                if (_board[row][col] != '.')
+                    return backTrace(_board, row, col + 1);
+                for (char c = '1';c <='9';c++)
+                {
+                    if (!isValid(_board, row, col, c))
+                        continue;
+                    _board[row][col] = c;
+                    if (backTrace(_board, row, col + 1))
+                        return true;
+                    _board[row][col] = '.';
+                }
+                return false;
+            }
+
+            bool isValid(char[][] _board, int row,int col, char ch)
+            {
+                for (int k = 0; k < 9; k++)
+                {
+                    if (_board[row][k] == ch) return false;
+                    if (_board[k][col] == ch) return false;
+                    if (_board[(row / 3) * 3 + k / 3][(col / 3) * 3 + k % 3] == ch) return false;
+                }
+                return true;
+            }
+        }
+
+
     }
 }

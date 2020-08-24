@@ -133,5 +133,15 @@ namespace SolutionTest
                 //TODO
             }
         }
+
+        //39
+        [Fact]
+        public void CombinationSumTest()
+        {
+            IList<IList<int>> ans = (IList<IList<int>>)new List<IList<int>>();
+            ans.Add(new int[] { 7 });
+            ans.Add(new int[] { 2, 2, 3 });
+            Assert.Equal(ans, Solution.CombinationSum(new int[] { 2, 3, 6, 7 }, 7));
+        }
     }
 }

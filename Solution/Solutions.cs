@@ -266,7 +266,7 @@ namespace Solutions
                     return true;
                 if (_board[row][col] != '.')
                     return backTrace(_board, row, col + 1);
-                for (char c = '1';c <='9';c++)
+                for (char c = '1'; c <= '9'; c++)
                 {
                     if (!isValid(_board, row, col, c))
                         continue;
@@ -278,7 +278,7 @@ namespace Solutions
                 return false;
             }
 
-            bool isValid(char[][] _board, int row,int col, char ch)
+            bool isValid(char[][] _board, int row, int col, char ch)
             {
                 for (int k = 0; k < 9; k++)
                 {
@@ -313,5 +313,34 @@ namespace Solutions
             sb.Append(pointer);
             return sb.ToString();
         }
+
+        //39.组合总和
+        static public IList<IList<int>> CombinationSum(int[] candidates, int target)
+        {
+            int len = candidates.Length;
+            IList<IList<int>> res = new List<IList<int>>();
+            if (len == 0) return res;
+            List<int> path = new List<int>();
+            dfs(candidates, 0, len, target, path, res);
+            return res;
+
+            void dfs(int[] _candidates, int _begin, int _len, int _target, List<int> _path, IList<IList<int>> _res)
+            {
+                if (_target < 0) return;
+                if (_target == 0)
+                {
+                    res.Add(new List<int>(_path));
+                    return;
+                }
+                for (int i = _begin; i < _len; i++)
+                {
+                    _path.Add(candidates[i]);
+                    dfs(_candidates, i, _len, _target - _candidates[i], _path, _res);
+                    _path.RemoveAt(_path.Count - 1);
+                }
+            }
+        }
+
+
     }
 }

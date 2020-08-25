@@ -341,6 +341,40 @@ namespace Solutions
             }
         }
 
+        //40.组合总和 II
+        static public IList<IList<int>> CombinationSum2(int[] candidates, int target)
+        {
+            Array.Sort(candidates);
+            int len = candidates.Length;
+            IList<IList<int>> res = new List<IList<int>>();
+            if (len == 0) return res;
+            List<int> path = new List<int>();
+            dfs(candidates, 0, len, target, path, res);
+            return res;
+
+            void dfs(int[] _candidates, int _begin, int _len, int _target, List<int> _path, IList<IList<int>> _res)
+            {
+                if (_target < 0) return;
+                if (_target == 0)
+                {
+                    res.Add(new List<int>(_path));
+                    return;
+                }
+
+                for (int i = _begin; i < _len; i++)
+                {
+                    if (_target - _candidates[i] < 0)
+                    {
+                        break;
+                    }
+                    if (i > _begin && candidates[i] == candidates[i - 1]) { continue; }
+
+                    _path.Add(candidates[i]);
+                    dfs(_candidates, i + 1, _len, _target - _candidates[i], _path, _res);
+                    _path.RemoveAt(_path.Count - 1);
+                }
+            }
+        }
 
     }
 }

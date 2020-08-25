@@ -376,5 +376,25 @@ namespace Solutions
             }
         }
 
+        //41. 缺失的第一个正数
+        static public int FirstMissingPositive(int[] nums)
+        {
+            for (int i = 0; i < nums.Length; i++)
+            {
+                int x = nums[i];
+                while (1 <= x && x <= nums.Length)
+                {
+                    if (nums[x - 1] == x) break;
+                    nums[i] = nums[x - 1];
+                    nums[x - 1] = x;
+                    x = nums[i];
+                }
+            }
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] != i + 1) return i + 1;
+            }
+            return nums.Length + 1;
+        }
     }
 }

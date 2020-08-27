@@ -396,5 +396,35 @@ namespace Solutions
             }
             return nums.Length + 1;
         }
+
+        //42. 接雨水
+        static public int Trap(int[] height)
+        {
+            if (height.Length <= 2) return 0;
+            int left = 0;
+            int right = height.Length - 1;
+            int lMax = height[0];//暂时可信的左max
+            int rMax = height[right];//暂时可信的右max
+            int ans = 0;
+            while (left <= right)
+            {
+               
+                if (lMax < rMax)    //左边暂时可信的max较小，由左向右装雨水
+                { 
+                    lMax = Math.Max(lMax, height[left]);
+                    ans += lMax - height[left];
+                    left++;
+                    
+                }
+                else
+                {
+                    rMax = Math.Max(rMax, height[right]);
+                    ans += rMax - height[right];
+                    right--;
+                    
+                }
+            }
+            return ans;
+        }
     }
 }

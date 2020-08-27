@@ -134,28 +134,11 @@ namespace SolutionTest
             }
         }
 
-        //39
+        //42
         [Fact]
-        public void CombinationSumTest()
+        public void TrapTest()
         {
-            IList<IList<int>> ans = (IList<IList<int>>)new List<IList<int>>();
-            ans.Add(new int[] { 7 });
-            ans.Add(new int[] { 2, 2, 3 });
-            Assert.Equal(ans, Solution.CombinationSum(new int[] { 2, 3, 6, 7 }, 7));
+            Assert.Equal(2, Solution.Trap(new int[] { 2, 0, 2 }));
         }
-
-        //40
-        [Fact]
-        public void CombinationSum2Test()
-        {
-            IList<IList<int>> ans = (IList<IList<int>>)new List<IList<int>>();
-            ans.Add(new int[] { 1,1,6 });
-            ans.Add(new int[] { 1,2,5 });
-            ans.Add(new int[] { 1, 7 });
-            ans.Add(new int[] { 2, 6 });
-            Assert.Equal(ans, Solution.CombinationSum2(new int[] { 10,1,2,7,6,1,5 }, 8));
-        }
-
-
     }
 }

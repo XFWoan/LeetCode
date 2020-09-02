@@ -140,5 +140,26 @@ namespace SolutionTest
         {
             Assert.Equal(2, Solution.Trap(new int[] { 2, 0, 2 }));
         }
+
+        //43
+        [Fact]
+        public void MultiplyTest()
+        {
+            Assert.Equal("6", Solution.Multiply("2", "3"));
+            Assert.Equal("408", Solution.Multiply("12", "34"));
+            Assert.Equal("7006652", Solution.Multiply("1234", "5678"));
+        }
+
+        //44
+        [Fact]
+        public void IsMatchTest()
+        {
+            Assert.False(Solution.IsMatch("aa", "a"));
+            Assert.True(Solution.IsMatch("aa", "*"));
+            Assert.False(Solution.IsMatch("cb", "?a"));
+            Assert.True(Solution.IsMatch("adceb", "*a*b"));
+            Assert.False(Solution.IsMatch("acdcb", "a*c?b"));
+            Assert.False(Solution.IsMatch("aab", "c*a*b"));
+        }
     }
 }

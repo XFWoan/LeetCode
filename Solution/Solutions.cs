@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Globalization;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace Solutions
@@ -425,6 +428,108 @@ namespace Solutions
                 }
             }
             return ans;
+        }
+
+        //43. 字符串相乘
+        static public string Multiply(string num1, string num2)
+        {
+            //10x10=100 99x99 = 9801
+            //获得各位相乘结果
+            bool zeroFlag = true;
+            int n = num1.Length + num2.Length;
+            int[] rawAns = new int[n];
+            for (int i = 0; i < num1.Length; i++)
+            {
+                for (int j = 0; j < num2.Length; j++)
+                {
+                    rawAns[1+i+j] += (num1[i] - '0') * (num2[j] - '0');
+                    if (rawAns[1 + i + j] != 0) zeroFlag = false;
+                }
+            }
+            if (zeroFlag) return "0";
+            //处理进位
+            //rawAns[0]必然是尚未使用的
+            for (int i = rawAns.Length-1; i > 0; i--)
+            {
+                int t = rawAns[i] % 10;
+                rawAns[i] /= 10;
+                int j = 1;
+                while (rawAns[i] > 0)
+                {
+                    rawAns[i - j] += rawAns[i] % 10;
+                    rawAns[i] /= 10;
+                    j++;
+                }
+                rawAns[i] = t;
+            }
+            StringBuilder ans = new StringBuilder();
+
+            for (int i = rawAns[0] == 0 ? 1 : 0; i < rawAns.Length; i++)
+            {
+                ans.Append(rawAns[i]);
+            }
+            return ans.ToString();
+        }
+
+        //44. 通配符匹配
+        static public bool IsMatch(string s, string p)
+        {
+            int sLen = s.Length;
+            int pLen = p.Length;
+            bool[][] dp = new bool[pLen+1][];
+            dp[0] = new bool[sLen + 1];
+            dp[0][0] = true;
+            for (int i = 1; i < sLen+1; i++)
+            {
+                dp[0][i] = false;
+            }
+            for (int i = 1; i <= pLen; i++)
+            {
+                dp[i] = new bool[sLen+1];
+                dp[i][0] = false;
+
+                if (p[i-1] == '*')
+                {
+                    int j = 0;
+                    while (j < sLen+1 && dp[i - 1][j] != true) j++;
+                    for (; j < sLen+1; j++)
+                    {
+                        dp[i][j] = true;
+                    }
+                }
+                else if (p[i-1] == '?')
+                {
+                    for (int j = 0; j < sLen; j++)
+                    {
+                        if (dp[i-1][j] == true)
+                        {
+                            dp[i][j + 1] = true;
+                        }
+                        else
+                        {
+                            dp[i][j + 1] = false;
+                        }
+                    }
+                }
+                else
+                {
+                    for (int j = 0; j < sLen; j++)
+                    {
+                        if (dp[i-1][j] == true)
+                        {
+                            if (p[i-1] == s[j])
+                            {
+                                dp[i][j+1] = true;
+                            }
+                            else
+                            {
+                                dp[i][j+1] = false;
+                            }
+                        }
+                    }
+                }
+            }
+            return dp[pLen][sLen];
         }
     }
 }

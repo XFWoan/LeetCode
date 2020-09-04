@@ -169,5 +169,19 @@ namespace SolutionTest
             Assert.Equal(2, Solution.Jump(new int[] { 2, 3, 1, 1, 4 }));
             Assert.Equal(0, Solution.Jump(new int[] { 0 }));
         }
+
+        //46
+        [Fact]
+        public void PermuteTest()
+        {
+            IList<IList<int>> ans = new List<IList<int>>();
+            ans.Add(new List<int>(new int[] { 1, 2, 3 }));
+            ans.Add(new List<int>(new int[] { 1, 3, 2 }));
+            ans.Add(new List<int>(new int[] { 2, 1, 3 }));
+            ans.Add(new List<int>(new int[] { 2, 3, 1 }));
+            ans.Add(new List<int>(new int[] { 3, 1, 2 }));
+            ans.Add(new List<int>(new int[] { 3, 2, 1 }));
+            Assert.Equal(ans, Solution.Permute(new int[] { 1, 2, 3 }));
+        }
     }
 }

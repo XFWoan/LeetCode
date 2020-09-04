@@ -161,5 +161,13 @@ namespace SolutionTest
             Assert.False(Solution.IsMatch("acdcb", "a*c?b"));
             Assert.False(Solution.IsMatch("aab", "c*a*b"));
         }
+
+        //45
+        [Fact]
+        public void JumpTest()
+        {
+            Assert.Equal(2, Solution.Jump(new int[] { 2, 3, 1, 1, 4 }));
+            Assert.Equal(0, Solution.Jump(new int[] { 0 }));
+        }
     }
 }

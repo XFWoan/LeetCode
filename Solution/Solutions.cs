@@ -531,5 +531,35 @@ namespace Solutions
             }
             return dp[pLen][sLen];
         }
+
+        //45. 跳跃游戏 II
+        static public int Jump(int[] nums)
+        {
+            if (nums.Length == 1) return 0;
+            int ans = 0;
+            for (int i = 0; i < nums.Length;)
+            {
+                int index = 0;
+                int max = 0;
+                for (int j = 0; j < nums[i]; j++)
+                {
+                    if (i+j+1 >= nums.Length-1)
+                    {
+                        ans++;
+                        return ans;
+                    }
+                    if (nums[i+j+1] + j + 1 > max)
+                    {
+                        index = i + j + 1;
+                        max = nums[i + j + 1] + j + 1;
+                    }
+                }
+                i = index;
+                ans++;
+            }
+            return ans;
+        }
+
+
     }
 }

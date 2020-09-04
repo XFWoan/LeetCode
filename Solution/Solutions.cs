@@ -637,5 +637,27 @@ namespace Solutions
                 }
             }
         }
+
+        //49. 字母异位词分组
+        static public IList<IList<string>> GroupAnagrams(string[] strs)
+        {
+            if (strs.Length == 0) return new List<IList<string>>();
+            Dictionary<string, List<string>> ans = new Dictionary<string, List<string>>();
+            foreach (string s in strs)
+            {
+                char[] c = s.ToCharArray();
+                Array.Sort(c);
+                string key = new string(c);
+                if (!ans.ContainsKey(key))
+                {
+                    ans.Add(key, new List<string>());
+                }
+                ans[key].Add(s);
+            }
+            IList<IList<string>> res = new List<IList<string>>(ans.Values);
+            return res;
+        }
+
+
     }
 }

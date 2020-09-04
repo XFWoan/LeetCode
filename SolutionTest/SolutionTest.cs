@@ -183,5 +183,17 @@ namespace SolutionTest
             ans.Add(new List<int>(new int[] { 3, 2, 1 }));
             Assert.Equal(ans, Solution.Permute(new int[] { 1, 2, 3 }));
         }
+
+        //49
+        [Fact]
+        public void GroupAnagramsTest()
+        {
+            string[] input = new string[] { "eat", "tea", "tan", "ate", "nat", "bat" };
+            IList<IList<string>> ans = new List<IList<string>>();
+            ans.Add(new List<string>(new string[] { "ate", "eat", "tea" }));
+            ans.Add(new List<string>(new string[] { "nat", "tan" }));
+            ans.Add(new List<string>(new string[] { "bat" }));
+            Assert.Equal(ans, Solution.GroupAnagrams(input));
+        }
     }
 }

@@ -587,5 +587,38 @@ namespace Solutions
                 }
             }
         }
+
+        //47. 全排列 II
+        static public IList<IList<int>> PermuteUnique(int[] nums)
+        {
+            IList<IList<int>> ans = new List<IList<int>>();
+            Array.Sort(nums);
+            backtrack(new List<int>(nums), new List<int>(), ans);
+            return ans;
+
+            void backtrack(IList<int> input, IList<int> output, IList<IList<int>> res)
+            {
+                if (input.Count == 0)
+                {
+                    IList<int> newList = new List<int>(output);
+                    res.Add(newList);
+                    return;
+                }
+
+                for (int i = 0; i < input.Count; i++)
+                {
+                    if (i > 0 && input[i] == input[i-1])
+                    {
+                        continue;
+                    }
+                    int temp = input[i];
+                    input.RemoveAt(i);
+                    output.Add(temp);
+                    backtrack(input, output, res);
+                    output.RemoveAt(output.Count - 1);
+                    input.Insert(i, temp);
+                }
+            }
+        }
     }
 }
